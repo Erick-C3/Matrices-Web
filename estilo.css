@@ -1,0 +1,36 @@
+:root{
+    --tam-casilla: 25vh;
+    --tam-boton-casilla: 100%;
+    /* --pizza: rgb(146, 136, 58); */
+}
+
+body{
+    background-color: rgb(41, 92, 41);
+}
+
+
+#contenedor-matriz{
+    height: 100vh;
+    background-color: rgb(162, 203, 162);
+    display: grid;
+    place-content: center;
+}
+
+/* .otra-clase{
+    background-color: var(--pizza);
+} */
+
+
+.casilla{
+    height: var(--tam-casilla);
+    width: var(--tam-casilla);
+    background-color: rgb(28, 125, 27);
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.boton-casilla{
+    width: var(--tam-boton-casilla);
+    height: var(--tam-boton-casilla);
+    font-size: 15vh;
+}
