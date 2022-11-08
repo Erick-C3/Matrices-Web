@@ -1,9 +1,18 @@
+import { Tablero } from "./Tablero.js";
 
 const matriz = [
-    ["😎","😎","O"],
+    ["R","😎","O"],
     ["😎","X","😎"],
-    ["😎","😎","😎"],
+    ["😎","😎","😎"]
 ]
+
+
+const tableroObjecto = new Tablero();
+
+tableroObjecto.generarTablero(matriz);
+
+/*PRACTICA */
+
 
 /* document.querySelector("#contenedor-matriz").innerHTML = ` 
     <div class="row">
@@ -13,7 +22,7 @@ const matriz = [
     </div>
 `;
  */
-let matrizHtml = "";
+/* let matrizHtml = "";
 
 for (let i = 0; i < matriz.length; i++) {
     matrizHtml += `
@@ -22,7 +31,7 @@ for (let i = 0; i < matriz.length; i++) {
     for (let j = 0; j < matriz[i].length; j++) {
         matrizHtml += `
             <div class="col casilla otra-clase" id="col-${j}">
-                <button id="btn-${i}-${j}" type="button" class="btn btn-primary boton-casilla">${matriz[i][j]}</button>
+                <button onclick=alerta(this) id="btn-${i}-${j}" type="button" class="btn btn-primary boton-casilla">${matriz[i][j]}</button>
             </div>
         `;
     }
@@ -34,16 +43,15 @@ for (let i = 0; i < matriz.length; i++) {
     for (let j = 0; j < matriz[i].length; j++) {
         console.log( document.querySelector(`#btn-${i}-${j}`).innerHTML);
     }
-    
-}
-
-
-/* //quiero mostrar el contenido de la casilla
-function alerta(boton){
-    console.log(boton);
-    alert("PRESIONASTE", boton);
 } */
 
+
+//quiero mostrar el contenido de la casilla
+/* function alerta(boton){
+    console.log(boton.innerHTML);
+    alert("PRESIONASTE " + boton.innerHTML);
+}
+ */
 
 /* let i = 0;
 let j = 0;
